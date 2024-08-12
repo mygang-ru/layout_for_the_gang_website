@@ -1,0 +1,20 @@
+.text-wrap {
+    text-wrap: wrap;
+}
+
+.text-nowrap {
+    text-wrap: nowrap;
+}
+
+.text-break {
+    word-spacing: 100vw;
+}
+
+.weight-b {
+    font-weight: $font-weight-body;
+}
+
+.s {
+    overflow-wrap: break-word;
+    overflow: visible;
+}

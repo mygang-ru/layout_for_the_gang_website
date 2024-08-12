@@ -1,0 +1,11 @@
+@import "../2-design-tokens/colors";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $color-almost-black;
+}

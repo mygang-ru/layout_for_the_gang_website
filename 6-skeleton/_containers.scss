@@ -1,0 +1,156 @@
+.container {
+    margin-bottom: 3vw;
+}
+
+.container-big-web {
+    margin-bottom: 10vw;
+}
+
+.mb-10 {
+    margin-bottom: 10vw;
+}
+
+.mb-3 {
+    margin-bottom: 3vw;
+}
+
+.container-2k1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+@include for-desktop {
+    .container-page {
+        margin-right: 2vw;
+        margin-left: 2vw;
+        width: 96vw;
+    }
+
+    .container-big {
+        margin-right: 8%;
+        margin-left: 8%;
+        margin-bottom: 10vw;
+    }
+
+    .container-big-x {
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
+    .container-article {
+        margin-right: 18%;
+        margin-left: 18%;
+    }
+    
+    .container-h1 {
+        margin-bottom: 3vw;
+        margin-left: 5vw;
+    }
+    .container-big-web {
+        margin-right: 8%;
+        margin-left: 8%;
+        margin-bottom: 10vw;
+    }
+    .container-2k1-web {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+@include for-tablet {
+    .container-page {
+        margin-right: 7vw;
+        margin-left: 7vw;
+        width: 86vw;
+    }
+
+    .container-article {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .container-big {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 10vw;
+    }
+
+    .container-big-x {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .container-h1 {
+        margin-bottom: 3vw;
+        margin-left: 0vw;
+    }
+}
+
+
+@include for-mobile {
+    .container-page {
+        height: 100vw;
+        width: 90vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    .container-article {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .container-big {
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-bottom: 10vw;
+    }
+
+    .container-big-x {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .container-h1 {
+        margin-bottom: 3vw;
+        margin-left: 0vw;
+    }
+}
+
+.w-min {
+    width: min-content;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+
+
+.member {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@include for-desktop {
+    .member {
+        gap: 16px;
+    }
+}
+
+@include for-tablet {
+    .member {
+        gap: 16px;
+    }
+}
+
+@include for-mobile {
+    .member {
+        gap: 4px;
+    }
+}
+

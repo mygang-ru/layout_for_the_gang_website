@@ -1,0 +1,47 @@
+.card-context {
+    width: max-content;
+    padding: 4px 8px 4px 8px;
+    background-color: $color-off-white;
+    opacity: 80%;
+    border-radius: 4px;
+    @extend .base-text;
+    font-size: 10px;
+    color: $color-almost-black;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    object-fit: cover;
+    background-image: url("image/card.png");
+    background-position: 55% 30%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+@include for-desktop {
+    .card {
+        height: 400px;
+        aspect-ratio: 16/10;
+        border-radius: 40px;
+        padding: 32px 48px 32px 32px;
+    }
+}
+
+@include for-tablet-and-mobile {
+    .card {
+        min-height: 330px;
+        min-width: 304px;
+        border-radius: 20px;
+        padding: 16px;
+    }
+}
+
+
+.card-container-btn {
+    display: flex;
+    justify-self: end;
+    position: relative;
+    left: 25%
+}

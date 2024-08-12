@@ -1,0 +1,123 @@
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+    padding: 20px;
+    background-color: $color-off-white;
+    border-radius: 8px;
+    font-weight: $font-weight-body;
+}
+
+.contacts__grid {
+    display: grid;
+    gap: 32px;
+    justify-items: start;
+    align-items: center;
+}
+
+.contacts__map {
+    grid-area: Map;
+    object-fit: cover;
+    height: 528px;
+    border-radius: 40px;
+    aspect-ratio: 1;
+}
+
+.contacts__text {
+    grid-area: Textm;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts__contact-grid {
+    grid-area: Contact;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.contacts__button {
+    grid-area: Button;
+    @extend .btn-base;
+}
+
+
+@include for-desktop {
+    .contacts__map {
+        height: 528px;
+        border-radius: 40px;
+    }
+
+    .contacts__text {
+        max-width: 304px;
+    }
+
+    .contacts__item {
+        width: 256px;
+    }
+    .contacts__grid {
+        grid-template-areas: "Map Textm"
+                             "Map Textm"
+                             "Map Contact"
+                             "Map Contact"
+                             "Map Button";
+    }
+}
+
+@include for-tablet {
+    .contacts__map {
+        height: 304px;
+        border-radius: 20px;
+    }
+    .contacts__item {
+        width: 304px;
+    }
+    .contacts__text {
+        max-width: 304px;
+    }
+
+    .contacts__grid {
+        grid-template-areas: "Textm Contact"
+                             "Map Contact"
+                             "Map Contact"
+                             ". Contact"
+                             "Button Contact";
+        width: fit-content;
+        justify-items: start;
+    }
+    .contacts__contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@include for-mobile {
+    .contacts__map {
+        height: 290px;
+        border-radius: 20px;
+    }
+    .contacts__item {
+        width: 290px;
+    }
+    .contacts__text {
+        max-width: 290px;
+    }
+    .contacts__grid {
+        display: grid;
+        grid-template-areas: "Textm"
+                             "Map"
+                             "Map"
+                             "Contact"
+                             "Contact"
+                             "Contact"
+                             "Contact"
+                             "Button";  
+        gap: 16px;
+    }
+    .contacts__contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,113 @@
+$font-family: 'Montserrat';
+$font-weight-heading: 700;
+$font-weight-body: 400;
+$font-line-height: 1.219;
+
+
+.base-text {
+    font-family: $font-family;
+    line-height: $font-line-height;
+}
+
+.base-heading {
+    @extend .base-text;
+    color: $color-off-white;
+    font-weight: $font-weight-heading;
+}
+
+.base-heading-dark {
+    @extend .base-text;
+    color: $color-almost-black;
+    font-weight: $font-weight-heading;
+}
+
+.base-body {
+    @extend .base-text;
+    color: $color-off-white;
+    font-weight: $font-weight-body;
+}
+
+.rostov {
+    font-family: 'Rostov';
+    font-size: 240px;
+    font-weight: 400;
+    line-height: 240px;
+    color: $color-almost-black;
+    text-shadow: 
+        -0   -5px 0   $color-gray-dark,
+         0   -5px 0   $color-gray-dark,
+        -0    5px 0   $color-gray-dark,
+         0    5px 0   $color-gray-dark,
+        -5px -0   0   $color-gray-dark,
+         5px -0   0   $color-gray-dark,
+        -5px  0   0   $color-gray-dark,
+         5px  0   0   $color-gray-dark,
+        -1px -5px 0   $color-gray-dark,
+         1px -5px 0   $color-gray-dark,
+        -1px  5px 0   $color-gray-dark,
+         1px  5px 0   $color-gray-dark,
+        -5px -1px 0   $color-gray-dark,
+         5px -1px 0   $color-gray-dark,
+        -5px  1px 0   $color-gray-dark,
+         5px  1px 0   $color-gray-dark,
+        -2px -5px 0   $color-gray-dark,
+         2px -5px 0   $color-gray-dark,
+        -2px  5px 0   $color-gray-dark,
+         2px  5px 0   $color-gray-dark,
+        -5px -2px 0   $color-gray-dark,
+         5px -2px 0   $color-gray-dark,
+        -5px  2px 0   $color-gray-dark,
+         5px  2px 0   $color-gray-dark,
+        -3px -5px 0   $color-gray-dark,
+         3px -5px 0   $color-gray-dark,
+        -3px  5px 0   $color-gray-dark,
+         3px  5px 0   $color-gray-dark,
+        -5px -3px 0   $color-gray-dark,
+         5px -3px 0   $color-gray-dark,
+        -5px  3px 0   $color-gray-dark,
+         5px  3px 0   $color-gray-dark,
+        -4px -5px 0   $color-gray-dark,
+         4px -5px 0   $color-gray-dark,
+        -4px  5px 0   $color-gray-dark,
+         4px  5px 0   $color-gray-dark,
+        -5px -4px 0   $color-gray-dark,
+         5px -4px 0   $color-gray-dark,
+        -5px  4px 0   $color-gray-dark,
+         5px  4px 0   $color-gray-dark,
+        -5px -5px 0   $color-gray-dark,
+         5px -5px 0   $color-gray-dark,
+        -5px  5px 0   $color-gray-dark,
+         5px  5px 0   $color-gray-dark,
+        -5px -5px 0   $color-gray-dark,
+         5px -5px 0   $color-gray-dark,
+        -5px  5px 0   $color-gray-dark,
+         5px  5px 0   $color-gray-dark;
+}
+
+@include for-tablet-and-mobile {
+    .rostov {
+        font-size: 60px;
+        line-height: 60px;
+        text-shadow: 
+		-0   -1px 0   $color-gray-font,
+		 0   -1px 0   $color-gray-font,
+		-0    1px 0   $color-gray-font,
+		 0    1px 0   $color-gray-font,
+		-1px -0   0   $color-gray-font,
+		 1px -0   0   $color-gray-font,
+		-1px  0   0   $color-gray-font,
+		 1px  0   0   $color-gray-font,
+		-1px -1px 0   $color-gray-font,
+		 1px -1px 0   $color-gray-font,
+		-1px  1px 0   $color-gray-font,
+		 1px  1px 0   $color-gray-font,
+		-1px -1px 0   $color-gray-font,
+		 1px -1px 0   $color-gray-font,
+		-1px  1px 0   $color-gray-font,
+		 1px  1px 0   $color-gray-font;
+    }
+}
+
+.text-shadow-none {
+    text-shadow: none;
+}

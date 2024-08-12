@@ -1,0 +1,53 @@
+$border-radius-sm: 8px;
+$border-radius: 10px;
+$border-radius-md: 16px;
+$border-radius-l: 20px;
+$border-radius-xl: 32px;
+$border-radius-xxl: 40px;
+
+.border-radius-sm {
+    border-radius: $border-radius-sm;
+}
+
+.border-radius {
+    border-radius: $border-radius;
+}
+
+.border-radius-md {
+    border-radius: $border-radius-md;
+}
+
+.border-radius-l {
+    border-radius: $border-radius-l;
+}
+
+.border-radius-xl {
+    border-radius: $border-radius-xl;
+}
+
+.border-radius-xxl {
+    border-radius: $border-radius-xxl;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+@include for-desktop {
+    .border-bottom {
+        width: 512px;
+    }
+}
+
+@include for-tablet {
+    .border-bottom {
+        width: 242px;
+    }
+}
+
+@include for-mobile {
+    .border-bottom {
+        width: 242px;
+    }
+}
+
