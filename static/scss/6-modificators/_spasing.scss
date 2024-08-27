@@ -1,0 +1,94 @@
+$space-min: 4px;
+$space-sm: 8px;
+$space-s: 10px;
+$space: 16px;
+$space-md: 20px;
+$space-l: 22px;
+$space-l-plus: 26px;
+$space-xl: 32px;
+$space-xxl: 40px;
+$space-max: 60px;
+
+.gap-min { gap: $space-min; }
+.gap-sm { gap: $space-sm; }
+.gap-s { gap: $space-s; }
+.gap { gap: $space; }
+.gap-md { gap: $space-md; }
+.gap-l { gap: $space-l; }
+.gap-xl { gap: $space-xl; }
+.gap-xxl { gap: $space-xxl; }
+.gap-max { gap: $space-max; }
+
+
+@include for-desktop {
+    .gap-20-16-16 {  gap: 20px;  }
+    .gap-40-20-32 {  gap: 40px;  }
+    .gap-40-16-16 {  gap: 40px;  }
+    .gap-32-32-16 {  gap: 32px;  }
+    .gap-32-20-20 {  gap: 32px;  }
+    .gap-100-60-40 {  gap: 100px;  }
+    .gap-40-20-20 {  gap: 40px;  }
+    .gap-60-20-20 {  gap: 60px;  }
+    .gap-60-40-20 {  gap: 60px;  }
+    .gap-40-32-16 {  gap: 40px;  }
+    .gap-32-40-20 {  gap: 32px;  }
+    .gap-32-16-16 {  gap: 32px;  }
+    .gap-40-8-8 {  gap: 40px;  }
+    .gap-40-32-32 {  gap: 40px;  }
+    .gap-32-32-20 { gap: 32px; }
+    .gap-16-14-12 {  gap: 16px;  }
+    .gap-40-6-6 {  gap: 40px;  }
+    .gap-26-26-8 {  gap: 26px;  }
+    .gap-16-16-4 {  gap: 16px;  }
+    .gap-otr-60-28-8 {  margin-top: -60px;  }
+}
+
+
+@include for-tablet {
+    .gap-20-16-16 {  gap: 16px;  }
+    .gap-40-20-32 {  gap: 20px;  }
+    .gap-40-16-16 {  gap: 16px;  }
+    .gap-32-32-16 {  gap: 32px;  }
+    .gap-32-20-20 {  gap: 20px;  }
+    .gap-100-60-40 {  gap: 60px;  }
+    .gap-40-20-20 {  gap: 20px;  }
+    .gap-60-40-20 {  gap: 40px;  }
+    .gap-40-32-16 {  gap: 32px;  }
+    .gap-32-40-20 {  gap: 40px;  }
+    .gap-60-20-20 {  gap: 20px;  }
+    .gap-32-16-16 {  gap: 16px;  }
+    .gap-40-8-8 {  gap: 8px;  }
+    .gap-32-32-20 { gap: 20px; }
+    .gap-40-32-32 {  gap: 32px;  }
+    .gap-16-14-12 {  gap: 14px;  }
+    .gap-40-6-6 {  gap: 6px;  }
+    .gap-26-26-8 {  gap: 26px;  }
+    .gap-16-16-4 {  gap: 16px;  }
+    .gap-otr-60-28-8 {  margin-top: -28px;  }
+
+}
+
+
+@include for-mobile {
+    .gap-20-16-16 {  gap: 16px;  }
+    .gap-40-20-32 {  gap: 32px;  }
+    .gap-40-16-16 {  gap: 16px;  }
+    .gap-32-32-16 {  gap: 16px;  }
+    .gap-32-20-20 {  gap: 20px;  }
+    .gap-100-60-40 {  gap: 40px;  }
+    .gap-40-20-20 {  gap: 20px;  }
+    .gap-60-40-20 {  gap: 20px;  }
+    .gap-40-32-16 {  gap: 16px;  }
+    .gap-32-40-20 {  gap: 20px;  }
+    .gap-60-20-20 {  gap: 20px;  }
+    .gap-32-16-16 {  gap: 16px;  }
+    .gap-40-8-8 {  gap: 8px;  }
+    .gap-32-32-20 { gap: 20px; }
+    .gap-40-32-32 {  gap: 32px;  }
+    .gap-16-14-12 {  gap: 12px;  }
+    .gap-40-6-6 {  gap: 6px;  }
+    .gap-26-26-8 {  gap: 8px;  }
+    .gap-16-16-4 {  gap: 4px;  }
+    .gap-otr-60-28-8 {  margin-top: -8px;  }
+
+}

@@ -1,0 +1,48 @@
+@include for-desktop {
+    .ignore {
+        align-self: start;
+        margin-left: calc((100vw - 1312px) / 2) ;
+        max-width: calc(100vw - (100vw - 1312px) / 2);
+    }
+    .ignore-case {
+        margin-left: calc((100vw - 1088px) / 2) ;
+        max-width: calc(100vw - (100vw - 1088px) / 2);
+    }
+    .ignore-article {
+        align-self: start;
+        margin-left: calc((100% - 864px) / 2) ;
+        max-width: calc(100vw - (100vw - 864px) / 2);
+    }
+}
+
+@include for-tablet {
+    .ignore {
+        width: calc(100% + 7vw);
+    }
+    .ignore-case {
+        margin-left: calc((86vw - 640px) / 2) ;
+        max-width: calc(100vw - (100vw - 640px) / 2);
+    }
+    .ignore-article {
+        margin-left: calc((100vw - 688px) / 2) ;
+        max-width: calc(100vw - (100vw - 640px) / 2);
+    }
+}
+
+@include for-mobile {
+    .ignore {
+        width: calc(100% + 5vw);
+    }
+    .ignore-case {
+        margin-left: calc((90vw - 290px) / 2) ;
+        max-width: calc(100vw - (100vw - 290px) / 2);
+    }
+    .ignore-article {
+        margin-left: calc((100vw - 290px) / 2) ;
+        max-width: calc(100vw - (100vw - 290px) / 2);
+    }
+    .ignore-tags {
+        margin-left: -5vw;
+        min-width: 100vw;
+    }
+}

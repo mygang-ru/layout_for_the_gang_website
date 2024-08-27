@@ -1,0 +1,277 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@font-face {
+	font-family: "Rostov";
+	src: url("static/fonts/rostov.eot") format("embedded-opentype"),
+		url("static/fonts/rostov.otf") format("opentype"),
+		url("static/fonts/rostov.svg") format("svg"),
+		url("static/fonts/Rostov.ttf") format("truetype"),
+		url("static/fonts/rostov.woff") format("woff"),
+		url("static/fonts/rostov.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+$font-family: 'Montserrat';
+$font-weight-heading: 700;
+$font-weight-body: 400;
+$font-line-height: 1.219;
+
+
+.base-text {
+    font-family: $font-family;
+    line-height: $font-line-height;
+    // color: $color-off-white;
+}
+
+.btn-text-sm {
+    @extend .base-text;
+    font-size: 20px;
+}
+
+h1, h2, h3, .btn-text {
+    @extend .base-text;
+    font-weight: $font-weight-heading;
+}
+
+h4, h5, h6 {
+    @extend .base-text;
+    font-weight: $font-weight-body;
+}
+
+.text-shadow-none {
+    text-shadow: none;
+}
+
+.letter-spacing-16 {
+    letter-spacing: 16px;
+}
+
+@include for-desktop {
+    .job-h2 {
+        text-align: end;
+        position: relative;
+        bottom: 20px;
+    }
+    .rostov {
+        font-family: 'Rostov';
+        font-size: 240px;
+        font-weight: 400;
+        line-height: 240px;
+        color: $color-almost-black;
+        text-shadow: 
+            -0   -5px 0   $color-gray-dark,
+             0   -5px 0   $color-gray-dark,
+            -0    5px 0   $color-gray-dark,
+             0    5px 0   $color-gray-dark,
+            -5px -0   0   $color-gray-dark,
+             5px -0   0   $color-gray-dark,
+            -5px  0   0   $color-gray-dark,
+             5px  0   0   $color-gray-dark,
+            -1px -5px 0   $color-gray-dark,
+             1px -5px 0   $color-gray-dark,
+            -1px  5px 0   $color-gray-dark,
+             1px  5px 0   $color-gray-dark,
+            -5px -1px 0   $color-gray-dark,
+             5px -1px 0   $color-gray-dark,
+            -5px  1px 0   $color-gray-dark,
+             5px  1px 0   $color-gray-dark,
+            -2px -5px 0   $color-gray-dark,
+             2px -5px 0   $color-gray-dark,
+            -2px  5px 0   $color-gray-dark,
+             2px  5px 0   $color-gray-dark,
+            -5px -2px 0   $color-gray-dark,
+             5px -2px 0   $color-gray-dark,
+            -5px  2px 0   $color-gray-dark,
+             5px  2px 0   $color-gray-dark,
+            -3px -5px 0   $color-gray-dark,
+             3px -5px 0   $color-gray-dark,
+            -3px  5px 0   $color-gray-dark,
+             3px  5px 0   $color-gray-dark,
+            -5px -3px 0   $color-gray-dark,
+             5px -3px 0   $color-gray-dark,
+            -5px  3px 0   $color-gray-dark,
+             5px  3px 0   $color-gray-dark,
+            -4px -5px 0   $color-gray-dark,
+             4px -5px 0   $color-gray-dark,
+            -4px  5px 0   $color-gray-dark,
+             4px  5px 0   $color-gray-dark,
+            -5px -4px 0   $color-gray-dark,
+             5px -4px 0   $color-gray-dark,
+            -5px  4px 0   $color-gray-dark,
+             5px  4px 0   $color-gray-dark,
+            -5px -5px 0   $color-gray-dark,
+             5px -5px 0   $color-gray-dark,
+            -5px  5px 0   $color-gray-dark,
+             5px  5px 0   $color-gray-dark,
+            -5px -5px 0   $color-gray-dark,
+             5px -5px 0   $color-gray-dark,
+            -5px  5px 0   $color-gray-dark,
+             5px  5px 0   $color-gray-dark;
+    }   
+	h1 { font-size: 120px; }
+	h2 { font-size: 40px; }
+	h3 { font-size: 32px; }
+	h4 { font-size: 16px; }
+	h5 { font-size: 14px; }
+	h6 { font-size: 12px; }
+	.btn-text { font-size: 20px; }
+}
+
+@include for-tablet {
+    .rostov {
+        font-family: 'Rostov';
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 400;
+        color: $color-almost-black;
+        text-shadow: 
+            -0   -1px 0   $color-gray-dark,
+             0   -1px 0   $color-gray-dark,
+            -0    1px 0   $color-gray-dark,
+             0    1px 0   $color-gray-dark,
+            -1px -0   0   $color-gray-dark,
+             1px -0   0   $color-gray-dark,
+            -1px  0   0   $color-gray-dark,
+             1px  0   0   $color-gray-dark,
+            -1px -1px 0   $color-gray-dark,
+             1px -1px 0   $color-gray-dark,
+            -1px  1px 0   $color-gray-dark,
+             1px  1px 0   $color-gray-dark,
+            -1px -1px 0   $color-gray-dark,
+             1px -1px 0   $color-gray-dark,
+            -1px  1px 0   $color-gray-dark,
+             1px  1px 0   $color-gray-dark,
+            -2px -1px 0   $color-gray-dark,
+             2px -1px 0   $color-gray-dark,
+            -2px  1px 0   $color-gray-dark,
+             2px  1px 0   $color-gray-dark,
+            -1px -2px 0   $color-gray-dark,
+             1px -2px 0   $color-gray-dark,
+            -1px  2px 0   $color-gray-dark,
+             1px  2px 0   $color-gray-dark,
+            -3px -1px 0   $color-gray-dark,
+             3px -1px 0   $color-gray-dark,
+            -3px  1px 0   $color-gray-dark,
+             3px  1px 0   $color-gray-dark,
+            -1px -3px 0   $color-gray-dark,
+             1px -3px 0   $color-gray-dark,
+            -1px  3px 0   $color-gray-dark,
+             1px  3px 0   $color-gray-dark,
+            -4px -1px 0   $color-gray-dark,
+             4px -1px 0   $color-gray-dark,
+            -4px  1px 0   $color-gray-dark,
+             4px  1px 0   $color-gray-dark,
+            -1px -4px 0   $color-gray-dark,
+             1px -4px 0   $color-gray-dark,
+            -1px  4px 0   $color-gray-dark,
+             1px  4px 0   $color-gray-dark,
+            -1px -1px 0   $color-gray-dark,
+             1px -1px 0   $color-gray-dark,
+            -1px  1px 0   $color-gray-dark,
+             1px  1px 0   $color-gray-dark,
+            -1px -1px 0   $color-gray-dark,
+             1px -1px 0   $color-gray-dark,
+            -1px  1px 0   $color-gray-dark,
+             1px  1px 0   $color-gray-dark;
+    }   
+	h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 16px; }
+    h4 { font-size: 14px; }
+    h5 { font-size: 12px; }
+    h6 { font-size: 10px; }
+    .btn-text { font-size: 14px; }
+}
+
+@include for-mobile {
+    .rostov {
+        font-family: 'Rostov';
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 400;
+        color: $color-almost-black;
+        text-shadow: 
+            -0   -1px 0   $color-gray-dark,
+             0   -1px 0   $color-gray-dark,
+            -0    1px 0   $color-gray-dark,
+             0    1px 0   $color-gray-dark,
+            -1px -0   0   $color-gray-dark,
+             1px -0   0   $color-gray-dark,
+            -1px  0   0   $color-gray-dark,
+             1px  0   0   $color-gray-dark,
+            -1px -1px 0   $color-gray-dark,
+             1px -1px 0   $color-gray-dark,
+            -1px  1px 0   $color-gray-dark,
+             1px  1px 0   $color-gray-dark,
+            -1px -1px 0   $color-gray-dark,
+             1px -1px 0   $color-gray-dark,
+            -1px  1px 0   $color-gray-dark,
+             1px  1px 0   $color-gray-dark,
+            -2px -1px 0   $color-gray-dark,
+             2px -1px 0   $color-gray-dark,
+            -2px  1px 0   $color-gray-dark,
+             2px  1px 0   $color-gray-dark,
+            -1px -2px 0   $color-gray-dark,
+             1px -2px 0   $color-gray-dark,
+            -1px  2px 0   $color-gray-dark,
+             1px  2px 0   $color-gray-dark,
+            -3px -1px 0   $color-gray-dark,
+             3px -1px 0   $color-gray-dark,
+            -3px  1px 0   $color-gray-dark,
+             3px  1px 0   $color-gray-dark,
+            -1px -3px 0   $color-gray-dark,
+             1px -3px 0   $color-gray-dark,
+            -1px  3px 0   $color-gray-dark,
+             1px  3px 0   $color-gray-dark,
+            -4px -1px 0   $color-gray-dark,
+             4px -1px 0   $color-gray-dark,
+            -4px  1px 0   $color-gray-dark,
+             4px  1px 0   $color-gray-dark,
+            -1px -4px 0   $color-gray-dark,
+             1px -4px 0   $color-gray-dark,
+            -1px  4px 0   $color-gray-dark,
+             1px  4px 0   $color-gray-dark,
+            -1px -1px 0   $color-gray-dark,
+             1px -1px 0   $color-gray-dark,
+            -1px  1px 0   $color-gray-dark,
+             1px  1px 0   $color-gray-dark,
+            -1px -1px 0   $color-gray-dark,
+             1px -1px 0   $color-gray-dark,
+            -1px  1px 0   $color-gray-dark,
+             1px  1px 0   $color-gray-dark;
+    }   
+	h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 16px; }
+    h4 { font-size: 14px; }
+    h5 { font-size: 12px; }
+    h6 { font-size: 10px; }
+    .btn-text { font-size: 14px; }
+}
+
+
+// .rostov {
+    // font-size: 60px;
+    // line-height: 60px;
+//     text-shadow: 
+//     -0   -1px 0   $color-gray-font,
+//      0   -1px 0   $color-gray-font,
+//     -0    1px 0   $color-gray-font,
+//      0    1px 0   $color-gray-font,
+//     -1px -0   0   $color-gray-font,
+//      1px -0   0   $color-gray-font,
+//     -1px  0   0   $color-gray-font,
+//      1px  0   0   $color-gray-font,
+//     -1px -1px 0   $color-gray-font,
+//      1px -1px 0   $color-gray-font,
+//     -1px  1px 0   $color-gray-font,
+//      1px  1px 0   $color-gray-font,
+//     -1px -1px 0   $color-gray-font,
+//      1px -1px 0   $color-gray-font,
+//     -1px  1px 0   $color-gray-font,
+//      1px  1px 0   $color-gray-font;
+// }
+
+
+

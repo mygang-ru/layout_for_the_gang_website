@@ -1,0 +1,89 @@
+.mb-big {
+    margin-bottom: 10vw;
+}
+
+.mb-3 {
+    margin-bottom: 3vw;
+}
+
+@include for-desktop {
+    .container-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    .container-big {
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+    .mb-big {
+        margin-bottom: 131px;
+    }
+    .container-h1 {
+        margin-left: 70px;
+    }
+    .scroll {
+        min-width: calc(((100vw - 1312px)) + 1312px);
+    }
+    .maw-1312-640-290 {  max-width: 1312px; }
+    .w-1312 {  max-width: 1312px;min-width: 1312px; }
+    .maw-640-640-290 {  max-width: 640px; }
+    .maw-720-640-290 {  max-width: 720px; }
+    .w-1088-640-290 {  max-width: 1088px;min-width: 1088px;  }
+    .maw-1088-640-290 {  max-width: 1088px;  }
+    .w-650-480-290 {  max-width: 650px;  }
+    .maw-864-640-290 {  max-width: 864px;  }
+    .maw-680-640-290 {  max-width: 680px;  }
+}
+
+
+@include for-tablet {
+    .container-page {
+        padding-right: 7vw;
+        padding-left: 7vw;
+    }
+    .container-big {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .scroll {
+        min-width: 640px;
+        width: max-content;
+        max-width: 93vw;
+    }
+    .maw-1312-640-290 {  max-width: 640px; }
+    .maw-640-640-290 {  max-width: 640px; }
+    .maw-720-640-290 {  max-width: 640px; }
+    .w-1088-640-290 {  max-width: 640px;min-width: 640px;  }
+    .w-1088-640-290 {  max-width: 640px;  }
+    .maw-1088-640-290 {  max-width: 640px;  }
+    .maw-680-640-290 {  max-width: 640px;  }
+    .w-650-480-290 {  max-width: 480px;  }
+    .maw-864-640-290 {  max-width: 640px;  }
+}
+
+
+@include for-mobile {
+    .container-page {
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    .container-big {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    .scroll {
+        min-width: 290px;
+        width: max-content;
+        max-width: 95vw;
+    }
+    .maw-1312-640-290 {  max-width: 290px; }
+    .maw-640-640-290 {  max-width: 290px; }
+    .maw-720-640-290 {  max-width: 290px; }
+    .w-1088-640-290 {  max-width: 290px;max-width: 290px;  }
+    .maw-1088-640-290 {  max-width: 290px;  }
+    .maw-680-640-290 {  max-width: 290px;  }
+    .w-650-480-290 {  max-width: 290px;  }
+    .maw-864-640-290 {  max-width: 290px;  }
+}

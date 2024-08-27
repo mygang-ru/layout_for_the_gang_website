@@ -1,0 +1,52 @@
+.web {  display: none;  }
+.tablet {  display: none;  }
+.mobile {   display: none;  }
+.tablet-mobile {  display: none;  }
+.overflow-h {  overflow: hidden;  }
+
+
+
+@include for-desktop {
+    .web {
+        display: block;
+    }
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+    .tablet-mobile {
+        display: none;
+    }
+}
+
+@include for-tablet {
+    .web {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .tablet-mobile {
+        display: block;
+    }
+}
+
+@include for-mobile {
+    .web {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .tablet-mobile {
+        display: block;
+    }
+}
