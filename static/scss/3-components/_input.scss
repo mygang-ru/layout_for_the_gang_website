@@ -1,0 +1,44 @@
+@include for-desktop {
+    .input-primary {
+        width: 308.5px;
+        height: 49px;
+        padding: 16px;
+        border: 1px solid $gray1;
+        border-radius: 8px;
+        background-color: $off-white;
+    }
+    .input-primary::placeholder {
+        color: $dark;
+        @include mix-regular-14;
+    }
+}
+
+@include for-tablet {
+    .input-primary {
+        width: 290px;
+        height: 47px;
+        padding: 16px;
+        border: 1px solid $gray1;
+        border-radius: 8px;
+        background-color: $off-white;
+    }
+    .input-primary::placeholder {
+        color: $dark;
+        @include mix-regular-14;
+    }
+}
+
+@include for-mobile {
+    .input-primary {
+        width: 290px;
+        height: 47px;
+        padding: 16px;
+        border: 1px solid $gray1;
+        border-radius: 8px;
+        background-color: $off-white;
+    }
+    .input-primary::placeholder {
+        color: $dark;
+        @include mix-regular-14;
+    }
+}

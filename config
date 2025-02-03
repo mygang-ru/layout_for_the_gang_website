@@ -1,0 +1,5 @@
+Host github.com
+    HostName git@github.com:mygang-ru/layout_for_the_gang_website.git
+    User git
+    IdentityFile first
+    IdentitiesOnly yes

@@ -1,0 +1,251 @@
+@include for-desktop {
+    .work_gang {
+        display: flex;
+        flex-direction: column;
+        min-width: 1088px;
+        max-width: 1088px;
+        height: fit-content;
+        gap: 20px;
+    }
+    .work_gang__title {
+        width: fit-content;
+        height: fit-content;
+        @include mix-bold-120;
+        color: white;
+    }
+    .work_gang__text {
+        width: fit-content;
+        height: fit-content;
+        @include mix-regular-16;
+        line-height: 24px;
+        color: $off-white; 
+        max-width: 680px;   
+    }
+
+
+    .job_advantures {
+        min-width: 1312px;
+        max-width: 1312px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .job_advantures__title {
+        @include mix-bold-120;
+        line-height: 120px;
+        color: white;
+        margin-left: 112px;
+    }
+    .job_advantures__text {
+        @include mix-regular-16;
+        color: $off-white;
+        min-width: 640px;
+        max-width: 640px;
+        margin-left: 112px;
+        line-height: 24px;
+    }
+    .job_advantures__container_advanture {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .job_advantures__advanture {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .job_advantures__advanture__img {
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 385px;
+        max-height: 385px;
+        border-radius: 40px;
+        background-color: $bg;
+    }
+    .job_advantures__advanture__text {
+        width: fit-content;
+        height: fit-content;
+        @include mix-bold-32;
+        color: $off-white; 
+    }
+
+    .vacantions {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        min-width: 1088px;
+        max-width: 1088px;
+    }
+    .vacantions__title {
+        @include mix-bold-120;
+        line-height: 120px;
+        color: white;
+    }
+    .vacantions__container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .vacantion {
+        min-width: 520px;
+        max-width: 520px;
+        min-height: 57px;
+        max-height: 57px;
+        border-bottom: 1px solid white;
+        @include mix-bold-40;
+        color: white;
+    }
+}
+
+@include for-tablet {
+    .work_gang {
+        display: flex;
+        flex-direction: column;
+        min-width: 640px;
+        max-width: 640px;
+        height: fit-content;
+        gap: 20px;
+    }
+    .work_gang__title {
+        width: fit-content;
+        height: fit-content;
+        @include mix-bold-24;
+        color: white;
+    }
+    .work_gang__text {
+        width: fit-content;
+        height: fit-content;
+        @include mix-regular-14;
+        line-height: 24px;
+        color: $off-white;    
+    }
+
+
+    .job_advantures {
+        min-width: 640px;
+        max-width: 640px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .job_advantures__title {
+        @include mix-bold-24;
+        color: white;
+    }
+    .job_advantures__text {
+        @include mix-regular-14;
+        color: $off-white;
+        min-width: 640px;
+        max-width: 640px;
+        line-height: 21px;
+    }
+    .job_advantures__container_advanture {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .job_advantures__advanture {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .job_advantures__advanture__img {
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 200px;
+        max-height: 200px;
+        border-radius: 12px;
+        background-color: $bg;
+    }
+    .job_advantures__advanture__text {
+        width: fit-content;
+        height: fit-content;
+        @include mix-bold-16;
+        color: $off-white; 
+    }
+}
+
+@include for-mobile {
+    .work_gang {
+        display: flex;
+        flex-direction: column;
+        min-width: 290px;
+        max-width: 290px;
+        height: fit-content;
+        gap: 20px;
+    }
+    .work_gang__title {
+        width: fit-content;
+        height: fit-content;
+        @include mix-bold-24;
+        color: white;
+    }
+    .work_gang__text {
+        width: fit-content;
+        height: fit-content;
+        @include mix-regular-14;
+        line-height: 24px;
+        color: $off-white; 
+        line-height: 24px;   
+        max-width: 640px;
+    }
+
+
+    .job_advantures {
+        min-width: 290px;
+        max-width: 290px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .job_advantures__title {
+        @include mix-bold-24;
+        color: white;
+    }
+    .job_advantures__text {
+        @include mix-regular-14;
+        color: $off-white;
+        min-width: 290px;
+        max-width: 290px;
+        line-height: 21px;
+    }
+    .job_advantures__container_advanture {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .job_advantures__advanture {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .job_advantures__advanture__img {
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 200px;
+        max-height: 200px;
+        border-radius: 12px;
+        background-color: $bg;
+    }
+    .job_advantures__advanture__text {
+        width: fit-content;
+        height: fit-content;
+        @include mix-bold-16;
+        color: $off-white; 
+    }
+}

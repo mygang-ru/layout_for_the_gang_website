@@ -1,0 +1,577 @@
+@include for-desktop {
+    .container__tags_uslugi {
+        width: fit-content;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 20px;
+        height: auto;
+    }
+    .usluga_container {
+        max-width: 1312px;
+        min-width: 1312px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .usluga__title {
+        @include mix-bold-120;
+        color: white;
+        line-height: 120px;
+    }
+    .uslugi_p {
+        @include mix-regular-16;
+        color: white;
+        min-width: 720px;
+        max-width: 720px;
+        line-height: 24px;
+        margin-top: 16px;
+    }
+    .usluga_container_tags {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        width: max-content;
+    }
+    .stages_title {
+        @include mix-bold-40;
+        color: white;
+    }
+    .stages_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        min-width: 1312px;
+        max-width: 1312px;
+    }
+    .stages {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        max-width: 352px;
+        min-width: 352px;
+    }
+    .stasge {
+        max-width: 352px;
+        min-width: 352px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .stage__number {
+        @include mix-bold-120;
+        line-height: 120px;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, #00B40F 0% 5%, #00B40F99, #00B40F99, #00B40F00, #00B40F00)
+    }
+    .stage__number_next {
+        @include mix-bold-120;
+        line-height: 120px;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, #FFFFFF 0% 5%,  #FFFFFF99, #FFFFFF99, #FFFFFF00, #FFFFFF00)
+    }
+    .stage__title {
+        @include mix-regular-16;
+        color: white;
+        line-height: 24px;
+    }
+    .stage__text {
+        @include mix-regular-14;
+        color: white;
+    }
+    .stage_col_text {
+        position: relative;
+        bottom: 44px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .case__container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .customers__container {
+        max-width: 1312px;
+        min-width: 1312px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .customers {
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+        margin-left: 32px;
+    }
+    .tarif {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 416px;
+        min-width: 416px;
+        max-height: 480px;
+        min-height: 480px;
+        background-color: $bg;
+        padding: 32px;
+        border-radius: 32px;
+    }
+    .tarif__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .tarif__title {
+        @include mix-bold-40;
+        color: $dark;
+    }
+    .tarif__price {
+        @include mix-bold-32;
+        color: $dark;
+    }
+    .tarif__text {
+        @include mix-regular-16;
+        color: $gray1;
+        line-height: 21px;
+    }
+    .tarif__bottom {
+        @include mix-regular-16;
+        line-height: 21px;
+        color: $dark;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    }
+    .tarif_row {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+    .uslugi__advantage__img {
+        max-width: 416px;
+        min-width: 416px;
+        max-height: 200px;
+        min-height: 200px;
+        border-radius: 16px;
+        object-fit: cover;
+        background-color: $bg;
+    }
+    .uslugi__advantage__title {
+        max-width: 416px;
+        min-width: 416px;
+        @include mix-regular-16;
+        color: white;
+        line-height: 24px;
+    }
+    .uslugi__advantage__text {
+        max-width: 416px;
+        min-width: 416px;
+        @include mix-regular-16;
+        color: white;
+        line-height: 24px;
+        opacity: 40%;
+    }
+    .uslugi__advantages_row {
+        max-width: 1312px;
+        min-width: 1312px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+}
+
+@include for-tablet {
+    .container__tags_uslugi {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 20px;
+        height: auto;
+    }
+    .usluga_container {
+        max-width: 640px;
+        min-width: 640px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .usluga__title {
+        @include mix-bold-24;
+        color: white;
+    }
+    .uslugi_p {
+        @include mix-regular-14;
+        color: white;
+        min-width: 528px;
+        max-width: 528px;
+        line-height: 21px;
+    }
+    .usluga_container_tags {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: max-content;
+    }
+    .stages_title {
+        @include mix-bold-20;
+        color: white;
+    }
+    .stages_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        min-width: 640px;
+        max-width: 640px;
+    }
+    .stages {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        max-width: 200px;
+        min-width: 200px;
+    }
+    .stasge {
+        max-width: 200px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .stage__number_next {
+        @include mix-bold-24;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, #FFFFFF 0% 5%,  #FFFFFF99, #FFFFFF99, #FFFFFF00, #FFFFFF00)
+    }
+    .stage__number {
+        @include mix-bold-24;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, #00B40F, #00B40F00)
+    }
+    .stage__title {
+        @include mix-regular-14;
+        color: white;
+        line-height: 21px;
+    }
+    .stage__text {
+        @include mix-regular-12;
+        color: white;
+    }
+    .stage_col_text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .case__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .customers__container {
+        max-width: 640px;
+        min-width: 640px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .customers {
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .tarif {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 290px;
+        min-width: 290px;
+        max-height: 420px;
+        min-height: 420px;
+        background-color: $bg;
+        padding: 32px;
+        border-radius: 32px;
+    }
+    .tarif__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 140px;
+        max-height: 140px;
+    }
+    .tarif__title {
+        @include mix-bold-20;
+        color: $dark;
+    }
+    .tarif__price {
+        @include mix-bold-14;
+        color: $dark;
+    }
+    .tarif__text {
+        @include mix-regular-14;
+        color: $gray1;
+        line-height: 21px;
+    }
+    .tarif__bottom {
+        @include mix-regular-14;
+        line-height: 21px;
+        color: $dark;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    }
+    .tarif_row {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+    .uslugi__advantage__img {
+        max-width: 290px;
+        min-width: 290px;
+        max-height: 180px;
+        min-height: 180px;
+        border-radius: 16px;
+        object-fit: cover;
+        background-color: $bg;
+    }
+    .uslugi__advantage__title {
+        max-width: 290px;
+        min-width: 290px;
+        @include mix-regular-16;
+        color: white;
+        line-height: 24px;
+    }
+    .uslugi__advantage__text {
+        max-width: 290px;
+        min-width: 290px;
+        @include mix-regular-16;
+        color: white;
+        line-height: 24px;
+        opacity: 40%;
+    }
+    .uslugi__advantages_row {
+        max-width: 640px;
+        min-width: 640px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+}
+
+@include for-mobile {
+    .container__tags_uslugi {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 20px;
+        height: auto;
+    }
+    .usluga_container {
+        max-width: 290px;
+        min-width: 290px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .usluga__title {
+        @include mix-bold-24;
+        color: white;
+    }
+    .uslugi_p {
+        @include mix-regular-14;
+        color: white;
+        min-width: 290px;
+        max-width: 290px;
+        line-height: 21px;
+    }
+    .usluga_container_tags {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: max-content;
+    }
+    .stages_title {
+        @include mix-bold-20;
+        color: white;
+    }
+    .stages_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        min-width: 290px;
+        max-width: 290px;
+    }
+    .stages {
+        max-width: 200px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .stasge {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 200px;
+        min-width: 200px;
+    }
+    .stage__number {
+        @include mix-bold-24;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, #00B40F, #00B40F00)
+    }
+    .stage__number_next {
+        @include mix-bold-24;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, #FFFFFF 0% 5%,  #FFFFFF99, #FFFFFF99, #FFFFFF00, #FFFFFF00)
+    }
+    .stage__title {
+        @include mix-regular-14;
+        color: white;
+        line-height: 21px;
+    }
+    .stage__text {
+        @include mix-regular-12;
+        color: white;
+    }
+    .stage_col_text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .customers__container {
+        max-width: 290px;
+        min-width: 290px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .customers {
+        min-width: 461px;
+        max-width: 461px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+    .tarif {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 290px;
+        min-width: 290px;
+        max-height: 420px;
+        min-height: 420px;
+        background-color: $bg;
+        padding: 32px;
+        border-radius: 32px;
+    }
+    .tarif__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 140px;
+        max-height: 140px;
+    }
+    .tarif__title {
+        @include mix-bold-20;
+        color: $dark;
+    }
+    .tarif__price {
+        @include mix-bold-14;
+        color: $dark;
+    }
+    .tarif__text {
+        @include mix-regular-14;
+        color: $gray1;
+        line-height: 21px;
+    }
+    .tarif__bottom {
+        @include mix-regular-14;
+        line-height: 21px;
+        color: $dark;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    }
+    .tarif_row {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .uslugi__advantage__img {
+        max-width: 290px;
+        min-width: 290px;
+        max-height: 180px;
+        min-height: 180px;
+        border-radius: 16px;
+        object-fit: cover;
+        background-color: $bg;
+    }
+    .uslugi__advantage__title {
+        max-width: 290px;
+        min-width: 290px;
+        @include mix-regular-14;
+        color: white;
+        line-height: 21px;
+    }
+    .uslugi__advantage__text {
+        max-width: 290px;
+        min-width: 290px;
+        @include mix-regular-14;
+        color: white;
+        line-height: 21px;
+        opacity: 40%;
+    }
+    .uslugi__advantages_row {
+        max-width: 290px;
+        min-width: 290px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+
+.stage-next {
+    opacity: 40%;
+}
+
+.mg-8 {
+    margin-top: 8px;
+}
+
+.color-dark2 {
+    color: $dark2;
+}
+
+.uslugi__advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.uslugi__advantage {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.uslugi__advantage__text__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

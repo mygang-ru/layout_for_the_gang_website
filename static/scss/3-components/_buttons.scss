@@ -1,0 +1,386 @@
+// Пример анимации нажатия на кнопку
+//  <!DOCTYPE html>
+// <html lang="en">
+
+// <head>
+//     <meta charset="UTF-8">
+//     <link rel="stylesheet" href="../../styles.css">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <script>
+//         document.addEventListener("DOMContentLoaded", () => {
+//         const button = document.querySelector('button');
+//         button.addEventListener("click", (event) => {
+//             button.style.opacity = 0.4;
+//             setTimeout(function () {
+//                 button.style.opacity = 1;
+//             }, 400);
+//         });
+//         });
+//     </script>
+// </head>
+
+// <body>
+//     <button class="btn-primary-dark"><span>Кнопка</span></button>
+// </body>
+
+// </html>
+
+@include for-tablet {
+
+}
+
+.btn-primary-dark {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    border-radius: 16px;
+    background-color: $dark;
+
+    span {
+        @include mix-bold-32;
+        color: $off-white;
+    }
+}
+
+.btn-primary-dark:hover {
+    background-color: $green;
+    transition-timing-function: ease-out;
+    transition-duration: 120ms;
+}
+
+
+.btn-primary-light {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    border-radius: 16px;
+    background-color: $off-white;;
+
+    span {
+        @include mix-bold-32;
+        color: $dark;
+    }
+}
+
+.btn-primary-light:hover {
+    background-color: $green;
+    transition-timing-function: ease-out;
+    transition-duration: 120ms;
+    color: $off-white;
+}
+
+
+.btn-secondary-dark {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border-radius: 8px;
+    background-color: inherit;
+    border: 2px solid $gray2;
+
+    span {
+        @include mix-bold-20;
+        color: $gray2;
+    }
+}
+
+.btn-secondary-dark:hover {
+    border: 2px solid $green;
+    transition-timing-function: ease-out;
+    transition-duration: 120ms;
+    span {
+        color: $green;
+    }
+}
+
+
+.btn-secondary-light {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border-radius: 8px;
+    background-color: inherit;
+    border: 2px solid $dark2;
+
+    span {
+        @include mix-bold-20;
+        color: $dark2;
+    }
+}
+
+.btn-secondary-light:hover {
+    border: 2px solid $green;
+    transition-timing-function: ease-out;
+    transition-duration: 120ms;
+    span {
+        color: $green;
+    }
+}
+
+
+.btn-primary-dark-mob {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border-radius: 8px;
+    background-color: $dark;
+
+    span {
+        @include mix-bold-16;
+        color: $off-white;
+    }
+}
+
+.btn-primary-light-mob {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border-radius: 8px;
+    background-color: $off-white;
+
+    span {
+        @include mix-bold-16;
+        color: $dark;
+    }
+}
+
+.btn-secondary-dark-mob {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    border-radius: 4px;
+    background-color: inherit;
+    border: 2px solid $gray2;
+
+    span {
+        @include mix-bold-14;
+        color: $gray2;
+    }
+}
+
+.btn-secondary-light-mob {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    border-radius: 4px;
+    background-color: inherit;
+    border: 2px solid $dark2;
+
+    span {
+        @include mix-bold-14;
+        color: $dark2;
+    }
+}
+
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    @include mix-regular-14;
+    font-size: 14px;
+}
+
+@include for-tablet {
+    .custom-checkbox+label {
+        font-family: $font-family;
+        font-weight: $font-weight-body;
+        font-size: 12px;
+        line-height: 14.63px;
+        color: $dark;
+    }
+    .btn-primary-dark {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 8px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        border-radius: 8px;
+        background-color: $dark;
+    
+        span {
+            @include mix-bold-16;
+            color: $off-white;
+        }
+    }
+    
+    .btn-primary-light {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 8px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        border-radius: 8px;
+        background-color: $off-white;
+    
+        span {
+            @include mix-bold-16;
+            color: $dark;
+        }
+    }
+    
+    .btn-secondary-dark {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        border-radius: 4px;
+        background-color: inherit;
+        border: 2px solid $gray2;
+    
+        span {
+            @include mix-bold-14;
+            color: $gray2;
+        }
+    }
+    
+    .btn-secondary-light {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        border-radius: 4px;
+        background-color: inherit;
+        border: 2px solid $dark2;
+    
+        span {
+            @include mix-bold-14;
+            color: $dark2;
+        }
+    }
+}
+
+@include for-mobile {
+    .custom-checkbox+label {
+        font-family: $font-family;
+        font-weight: $font-weight-body;
+        font-size: 12px;
+        line-height: 14.63px;
+        color: $dark;
+    }
+    .btn-primary-dark {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 8px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        border-radius: 8px;
+        background-color: $dark;
+    
+        span {
+            @include mix-bold-16;
+            color: $off-white;
+        }
+    }
+    
+    .btn-primary-light {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 8px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        border-radius: 8px;
+        background-color: $off-white;
+    
+        span {
+            @include mix-bold-16;
+            color: $dark;
+        }
+    }
+    
+    .btn-secondary-dark {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        border-radius: 4px;
+        background-color: inherit;
+        border: 2px solid $gray2;
+    
+        span {
+            @include mix-bold-14;
+            color: $gray2;
+        }
+    }
+    
+    .btn-secondary-light {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        border-radius: 4px;
+        background-color: inherit;
+        border: 2px solid $dark2;
+    
+        span {
+            @include mix-bold-14;
+            color: $dark2;
+        }
+    }
+}
+
+.custom-checkbox+label::before {
+    margin-right: 5px;
+    content: '';
+    display: inline-block;
+    min-width: 20px;
+    aspect-ratio: 1/1;
+    border: 2px solid $gray1;
+    border-radius: 4px;
+}
+
+.custom-checkbox:checked+label::before {
+    content: '';
+    display: inline-block;
+    min-width: 20px;
+    aspect-ratio: 1/1;
+    background-image: url("static/image/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid $green;
+    border-radius: 4px;
+    margin-right: 5px;
+}

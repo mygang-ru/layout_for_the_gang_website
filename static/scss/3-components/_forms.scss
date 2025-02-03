@@ -1,0 +1,210 @@
+@include for-desktop {
+    .form-question {
+        display: grid;
+        width: 1088px;
+        height: 242px;
+        padding: 32px;
+        gap: 20px;
+        border-radius: 12px;
+        grid-template-columns: 367px 308.5px 308.5px;
+        grid-template-rows: 49px 60px 40px;
+        background-color: $off-white;
+    
+        h1 {
+            @include mix-bold-40;
+            grid-column-start: 1; 
+            grid-column-end: 4;
+            color: $dark;
+        }
+    
+        h4 {
+            @include mix-regular-16;
+        }
+    
+        label {
+            max-width: 214px;
+        }
+    }
+    .form-team {
+        display: grid;
+        width: 1088px;
+        height: 380px;
+        padding: 32px;
+        gap: 20px;
+        border-radius: 12px;
+        grid-template-columns: 367px 308.5px 308.5px;
+        grid-template-rows: 49px 60px 49px 49px 40px;
+        background-color: $off-white;
+    
+        h1 {
+            @include mix-bold-40;
+            grid-column-start: 1; 
+            grid-column-end: 4;
+            color: $dark;
+        }
+    
+        h4 {
+            @include mix-regular-16;
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+    
+        .input-big {
+            width: 637px;
+            grid-column-start: 2; 
+            grid-column-end: 4;
+        }
+    
+        label {
+            min-width: 496px;
+            max-width: 496px;        
+        }
+    
+        button {
+            display: flex;
+            justify-self: end;
+            margin-right: 5px;
+        }
+    }
+    
+}
+
+
+@include for-tablet {
+    .form-question {
+        display: grid;
+        max-width: 640px;
+        height: 226px;
+        padding: 16px 15px 16px 15px;
+        gap: 16px;
+        border-radius: 12px;
+        grid-template-columns: 297px 297px;
+        grid-template-rows: 24px 42px 47px 25px;
+        background-color: $off-white;
+        overflow: hidden;
+    
+        h1 {
+            @include mix-bold-20;
+            color: $dark;
+            grid-column-start: 1; 
+            grid-column-end: 3;
+        }
+    
+        h4 {
+            width: 480px;
+            grid-column-start: 1; 
+            grid-column-end: 3;
+            @include mix-regular-14;
+        }
+    
+        label {
+            min-width: 496px;
+            max-width: 496px;        
+        }
+    
+        button {
+            display: flex;
+            justify-self: end;
+            margin-right: 5px;
+        }
+    }
+    .form-team {
+        display: grid;
+        width: 640px;
+        height: 352px;
+        padding: 16px 15px 16px 15px;
+        gap: 16px;
+        border-radius: 12px;
+        grid-template-columns: 297px 297px;
+        grid-template-rows: 24px 42px 47px 47px 47px 25px;
+        background-color: $off-white;
+    
+        h1 {
+            @include mix-bold-20;
+            grid-column-start: 1; 
+            grid-column-end: 3;
+            color: $dark;
+        }
+    
+        h4 {
+            max-width: 480px;
+            @include mix-regular-14;
+            grid-column-start: 1; 
+            grid-column-end: 3;
+        }
+    
+        .input-big {
+            width: 610px;
+            grid-column-start: 1; 
+            grid-column-end: 3;
+        }
+    
+        label {
+            min-width: 496px;
+            max-width: 496px;        
+        }
+    
+        button {
+            display: flex;
+            justify-self: end;
+            margin-right: 5px;
+        }
+    }
+}
+
+@include for-mobile {
+    .form-question {
+        display: grid;
+        max-width: 320px;
+        height: 392px;
+        padding: 16px 15px 16px 15px;
+        gap: 20px;
+        border-radius: 12px;
+        grid-template-columns: 290px;
+        background-color: $off-white;
+        overflow: hidden;
+    
+        h1 {
+            @include mix-bold-20;
+            color: $dark;
+        }
+    
+        h4 {
+            @include mix-regular-14;
+        }
+    
+        label {
+            max-width: 214px;
+        }
+    }  
+    .form-team {
+        display: grid;
+        width: 320px;
+        height: 623px;
+        padding: 16px 15px 16px 15px;
+        gap: 20px;
+        border-radius: 12px;
+        grid-template-columns: 290px;
+        grid-template-rows: 48px 63px 47px 47px 47px 47px 77px 30px 25px;
+        background-color: $off-white;
+    
+        h1 {
+            @include mix-bold-20;
+        }
+    
+        h4 {
+            @include mix-regular-14;
+        }
+        .input-big {
+            height: 77px;
+        }
+    
+        label {
+            min-width: 214px;
+            max-width: 214px;
+        }
+
+    }
+    
+}
+

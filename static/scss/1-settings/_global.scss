@@ -1,0 +1,27 @@
+$min-width-web: 1366px;
+$min-width-tablet: 744px;
+$min-width-mobile: 320px;
+
+$red: #C83540;
+$green: #00B40F;
+$off-white: #EEEEEE;
+$dark: #101010;
+$dark1: #2F2F2F;
+$dark2: #444444;
+$gray1: #898989;
+$gray2: #E1E1E1;
+$white: white;
+$gray-font: #939393;
+$bg: #D9D9D9;
+$bg2: #DFDFDF;
+
+@mixin for-mobile {
+    @media (max-width: $min-width-tablet) { @content; }
+}
+@mixin for-tablet {
+  @media (min-width: $min-width-tablet) and (max-width: $min-width-web) { @content; }
+}
+@mixin for-desktop {
+  @media (min-width: $min-width-web) { @content; }
+}
+

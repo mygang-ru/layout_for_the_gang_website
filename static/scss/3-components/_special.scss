@@ -1,0 +1,21 @@
+.logo-desktop {
+    display: flex;
+    gap:8px;
+    align-items: center;
+    height: 56px;
+    width: 237px;
+}
+
+.logo-tablet {
+    display: flex;
+    align-items: center;
+    gap:4px;
+    max-width: 171px;
+    img {
+        max-height: 40px;
+    }
+    .gang {
+        max-width: 127px;
+        max-height: 31px;
+    }
+}
