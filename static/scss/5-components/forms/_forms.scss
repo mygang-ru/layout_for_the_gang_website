@@ -1,0 +1,68 @@
+.form__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h2 h2 h2" "textm input1 input2" ". checkbox button";
+    background-color: $color-off-white; 
+    width: 1088px;
+    border-radius: 12px;
+    padding:32px;
+    gap: 20px;
+}
+
+.form__grid-h2 {
+    grid-area: h2;
+}
+
+.form__grid-textm {
+    grid-area: textm;
+}
+
+.form__grid-input1 {
+    grid-area: input1;
+}
+
+.form__grid-input2 {
+    grid-area: input2;
+}
+
+.form__grid-checkbox {
+    grid-area: checkbox;
+}
+
+.form__grid-button {
+    grid-area: button;
+}
+
+@include for-desktop {
+    .form__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "h2 h2 h2" "textm input1 input2" ". checkbox button";
+        background-color: $color-off-white; 
+        width: 1088px;
+        padding:32px;
+        gap: 20px;
+    }
+}
+
+@include for-tablet {
+    .form__grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "h2 h2" 'textm textm' "input1 input2" "checkbox button";
+        background-color: $color-off-white; 
+        width: 640px;
+        padding:16px;
+        gap: 20px;
+    }
+}
+
+@include for-mobile {
+    .form__grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "h2" 'textm' "input1" "input2" "checkbox" "button";
+        background-color: $color-off-white; 
+        width: 290px;
+        padding:16px;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,66 @@
+@use 'sass:list';
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-row-col {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {  flex-wrap: wrap;  }
+.nowrap {  flex-wrap: nowrap;  }
+
+
+@each $item in start, center, end, space-evenly, space-around, space-between {
+    .justify-content-#{$item} {
+        justify-content: $item;
+    }
+    .justify-items-#{$item} {
+        justify-items: $item;
+    }
+    .justify-self-#{$item} {
+        justify-content: $item;
+    }
+
+    .align-content-#{$item} {
+        align-content: $item;
+    }
+    .align-items-#{$item} {
+        align-items: $item;
+    }
+    .align-self-#{$item} {
+        align-self: $item;
+    }
+
+    .align-text-#{$item} {
+        text-align: $item;
+    }
+
+}
+
+@include for-desktop {
+    .align-items-center-web {
+        align-items: center;
+    }
+    .justify-content-center-web {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@include for-mobile {
+    .row-row-col {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

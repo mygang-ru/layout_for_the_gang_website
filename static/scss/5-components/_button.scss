@@ -1,0 +1,50 @@
+.btn {
+    @extend .btn-text;
+    padding: 8px 20px 8px 20px;
+    border-radius: 8px;
+    color: inherit;
+}
+
+.btn-sm {
+    @extend .btn-text;
+    min-height: 66px;
+    max-height: 66px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    color: inherit;
+    text-align: center;
+}
+
+.border-gray {
+    border: 2px solid $color-gray-dark;
+}
+
+.border-none {
+    border: 0px solid $color-gray-dark;
+}
+
+.border-gray-ligth {
+    border: 2px solid $color-gray-ligth;
+}
+
+.bg-off-white {
+    background-color: $color-off-white;
+    color: inherit;
+}
+
+
+.btn__red {
+    background-color: $color-red;
+    border: 0px;
+    color: $color-gray-ligth;
+}
+
+.btn__red-cross {
+    @extend .btn;
+    background-color: $color-red;
+    border: 0px;
+    padding-right: 40px;
+    background-image: url("static/image/cross.png");
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+}

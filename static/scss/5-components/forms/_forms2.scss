@@ -1,0 +1,80 @@
+.form__grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h2 h2 h2" "textm input1 input2" ". input3 input4" ". input5 input5" ". checkbox button";
+    background-color: $color-off-white; 
+    width: 1088px;
+    border-radius: 12px;
+    padding:32px;
+    gap: 20px;
+}
+
+.form__grid-h2 {
+    grid-area: h2;
+}
+
+.form__grid-textm {
+    grid-area: textm;
+}
+
+.form__grid-input1 {
+    grid-area: input1;
+}
+
+.form__grid-input2 {
+    grid-area: input2;
+}
+
+.form__grid-input3 {
+    grid-area: input3;
+}
+
+.form__grid-input4 {
+    grid-area: input4;
+}
+
+.form__grid-input5 {
+    grid-area: input5;
+}
+
+.form__grid-checkbox {
+    grid-area: checkbox;
+}
+
+.form__grid-button {
+    grid-area: button;
+}
+
+@include for-desktop {
+    .form__grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "h2 h2 h2" "textm input1 input2" ". input3 input4" ". input5 input5" ". checkbox button";
+        background-color: $color-off-white; 
+        width: 1088px;
+        padding:32px;
+        gap: 20px;
+    }
+}
+
+@include for-tablet {
+    .form__grid2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "h2 h2" 'textm textm' "input1 input2" "input3 input4" "input5 input5" "checkbox button";
+        background-color: $color-off-white; 
+        width: 640px;
+        padding:16px;
+        gap: 20px;
+    }
+}
+
+@include for-mobile {
+    .form__grid2 {
+        grid-template-columns: 1fr;
+        grid-template-areas: "h2" 'textm' "input1" "input2" "input3" "input4" "input5" "checkbox" "button";
+        background-color: $color-off-white; 
+        width: 100vw;
+        padding:16px;
+        gap: 20px;
+    }
+}

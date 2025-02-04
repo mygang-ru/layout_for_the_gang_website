@@ -1,0 +1,15 @@
+.light {
+    * {
+        color: $color-almost-black;
+        background-color: $color-off-white;
+    }
+}
+
+.dark {
+    color: $color-off-white;
+    background-color: $color-almost-black;
+    // * {
+    //     color: $color-off-white;
+    //     background-color: $color-almost-black;
+    // }
+}

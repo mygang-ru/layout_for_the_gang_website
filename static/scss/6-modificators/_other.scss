@@ -1,0 +1,19 @@
+.li-list {
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.h-auto {
+    min-height: fit-content;
+    max-height: fit-content;
+}
+
+.markers {  
+    margin-left: 3%; 
+    li {
+        list-style-type: disc;
+        color: inherit;
+    }
+}

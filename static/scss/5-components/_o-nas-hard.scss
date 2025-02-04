@@ -1,0 +1,127 @@
+.o_nas-shadow {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 38px 70px $color-almost-black inset;
+    -moz-box-shadow: 0px 0px 38px 70px $color-almost-black inset;
+    box-shadow: 0px 0px 38px 70px $color-almost-black inset;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.o_nas-shadow2 {
+    position: relative;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 38px 70px  rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    border: 10px solid $color-almost-black;
+}
+
+.o_nas-text {
+    position: absolute;
+    background-color: $color-almost-black;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.ia {
+    grid-area: a;
+}
+
+.ib {
+    grid-area: b;
+}
+
+.ic {
+    grid-area: c;
+}
+
+@include for-desktop {
+    .o-nas-hard {
+        position: relative;
+        z-index: -2;
+        text-align: center;
+        overflow: hidden;
+        aspect-ratio: 5/3;
+    }
+    .o_nas-text {
+        display: grid;
+        grid-template-areas: "a b" "a c";
+        text-align: start;
+        width: 707px;
+        height: 240px;
+    }
+    .ib {
+        align-self: end;
+    }
+}
+
+@include for-tablet {
+    .o_nas-text {
+        display: grid;
+        grid-template-areas: "a b b b b" "c c c c c";
+        text-align: start;
+        height: 140px;
+        width: 290px;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-bottom: 1%;
+    }
+    .ib {
+        align-self: center;
+    }
+    .o-nas-hard {
+        position: relative;
+        z-index: -2;
+        text-align: center;
+        overflow: hidden;
+        aspect-ratio: 5/3;
+    }
+    .o_nas-shadow {
+        -webkit-box-shadow: 0px 0px 38px 50px $color-almost-black inset;
+        -moz-box-shadow: 0px 0px 38px 50px $color-almost-black inset;
+        box-shadow: 0px 0px 38px 50px $color-almost-black inset;
+    }
+}
+
+@include for-mobile {
+    .o_nas-text {
+        display: grid;
+        grid-template-areas: "a b b b b" "c c c c c";
+        text-align: start;
+        height: 140px;
+        width: 290px;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-bottom: 100px;
+        bottom: 100px
+    }
+    .ib {
+        align-self: center;
+    }
+    .o-nas-hard {
+        position: relative;
+        z-index: -2;
+        text-align: center;
+        overflow: hidden;
+        aspect-ratio: 5/4;
+    }
+    .o_nas-shadow2 {
+        border-radius: 0%;
+    }
+    .o_nas-shadow {
+        border-radius: 0%;
+
+        -webkit-box-shadow: 10px 0px 38px 50px $color-almost-black inset;
+        -moz-box-shadow: 10px 0px 38px 50px $color-almost-black inset;
+        box-shadow: 10px 0px 38px 50px $color-almost-black inset;
+    }
+}
+

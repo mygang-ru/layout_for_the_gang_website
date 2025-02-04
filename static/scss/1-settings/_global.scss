@@ -1,5 +1,6 @@
 $min-width-web: 1366px;
 $min-width-tablet: 744px;
+<<<<<<< HEAD
 $min-width-mobile: 320px;
 
 $red: #C83540;
@@ -25,3 +26,6 @@ $bg2: #DFDFDF;
   @media (min-width: $min-width-web) { @content; }
 }
 
+=======
+$min-width-mobile: 320px;
+>>>>>>> 4cafbd824de3ff265a909b3d1e778152bd47f9a8
